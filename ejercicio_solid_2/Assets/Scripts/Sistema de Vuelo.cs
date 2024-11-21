@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SistemadeVuelo : MonoBehaviour
+public class SistemaDeVuelo
 {
-    // Start is called before the first frame update
-    void Start()
+    private IVuelo _Vuelo; //Ahora aprendi para que se usa el _, antes no sabia :3
+    public SistemaDeVuelo(IVuelo vuelo)
     {
-        
+        _Vuelo = vuelo;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Volar()
     {
-        
+        _Vuelo.Despegar();
     }
 }

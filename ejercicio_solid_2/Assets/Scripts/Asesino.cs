@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Asesino : MonoBehaviour
+// Personaje 2 que recibe la interfaz y la implementa de una forma diferente al Personaje 1 (corre antes de saltar)
+public class Asesino : MonoBehaviour, IVuelo
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Despegar()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("El asesino despega mediante una carrera.");
     }
 }

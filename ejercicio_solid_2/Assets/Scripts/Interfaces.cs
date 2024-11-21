@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interfaces : MonoBehaviour
+//Interfaz con el método Despegar() que va a ser implementado después por dos tipos de personajes. 
+public interface IVuelo
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Despegar();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

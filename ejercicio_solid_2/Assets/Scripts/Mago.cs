@@ -2,17 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mago : MonoBehaviour
+//Mi personaje 1 que recibe la interfaz para implementarla de forma específica (despega saltando)
+public class Mago : MonoBehaviour, IVuelo
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Despegar()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("El mago despega mediante un salto.");
     }
 }
