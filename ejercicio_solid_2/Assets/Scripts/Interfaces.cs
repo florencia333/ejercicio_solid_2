@@ -6,5 +6,6 @@ using UnityEngine;
 public interface IVuelo
 {
     void Despegar();
+    void VolarContinuo();
 
 }
