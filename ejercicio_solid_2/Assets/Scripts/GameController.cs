@@ -10,9 +10,9 @@ public class GameController : MonoBehaviour
     private SistemaDeVuelo _sistemaVueloMago;
     private SistemaDeVuelo _sistemaVueloAsesino;
 
-    //private float tiempoVueloMago = 0f;
-    //private float tiempoVueloAsesino = 0f;
-    //private const float tiempoMaximoSalto = 0.2f;
+    private float tiempoVueloMago = 0f; //
+    private float tiempoVueloAsesino = 0f;
+    private const float tiempoMaximoSalto = 0.2f;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour
         _sistemaVueloMago = new SistemaDeVuelo(mago);
         _sistemaVueloAsesino = new SistemaDeVuelo(asesino);
 
-        // Simula vuelos iniciales (opcional)
+        
         _sistemaVueloMago.Volar();
         _sistemaVueloAsesino.Volar();
     }

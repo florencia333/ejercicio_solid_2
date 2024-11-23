@@ -14,28 +14,31 @@ public class InputManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Entrada para el Mago
+        // Input para el Mago
         if (Input.GetKeyDown(KeyCode.W))
         {
-            OnMagoSalto?.Invoke(); // Evento de salto
+            OnMagoSalto?.Invoke();
         }
         if (Input.GetKey(KeyCode.W))
         {
-            OnMagoVuelo?.Invoke(); // Evento de vuelo continuo
+            OnMagoVuelo?.Invoke();
         }
 
-        // Entrada para el Asesino
+        // Input para el Asesino
         if (Input.GetKeyDown(KeyCode.I))
         {
-            OnAsesinoSalto?.Invoke(); // Evento de salto
+            OnAsesinoSalto?.Invoke();
         }
+
         if (Input.GetKey(KeyCode.I))
         {
-            OnAsesinoVuelo?.Invoke(); // Evento de vuelo continuo
+            OnAsesinoVuelo?.Invoke();
         }
         if (Input.GetKey(KeyCode.K))
         {
-            OnAsesinoMoverAdelante?.Invoke(); // Evento de movimiento adelante
+            OnAsesinoMoverAdelante?.Invoke();
         }
+
+
     }
 }
